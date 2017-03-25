@@ -64,7 +64,8 @@ hide ("level4")
 show ("level5")
 }
 
-	
+
+
 	
 	
 function show(id){
@@ -92,4 +93,10 @@ function finalScore() {
 function subtractPoints(points) {
 	score= score - points;
     document.getElementById("score").innerHTML = score;
+}
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
 }
